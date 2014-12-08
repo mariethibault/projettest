@@ -106,6 +106,7 @@ color: #5C99B0;
     text-decoration:none;
     text-transform: uppercase;
     line-height: 10px;  
+    
 }
 
 titnamc2 {
@@ -118,6 +119,7 @@ color: #5C99B0;
     text-decoration:none;
     text-transform: uppercase;
     line-height: 0px;  
+    
 }
 titnamc3 {
 color: #5C99B0;
@@ -262,5 +264,10 @@ loi h1 { text-align: center;
     font-size: 40px;
 }
 d { color:#5C99B0;}
-os:hover {
+d:hover {
 font-style: italic;}
+
+.center { max-width: 740px;
+    margin: auto;
+    margin-top: 100px;
+}
