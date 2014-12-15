@@ -1,3 +1,4 @@
+/* général */
 p { text-align:justify;
 }
 
@@ -41,6 +42,9 @@ nav li {
 }
 body {
     margin: 0px;
+    background-image:url(http://farm7.staticflickr.com/6097/6337890839_13de386ec1.jpg);
+    background-attachment:fixed;  
+     
 }
 
 footer ul {
@@ -58,8 +62,7 @@ footer li {
 
 
 footer {
-position:fixed;
-bottom:0;
+
 left:0;
 height:80;
  width: 100%;
@@ -86,92 +89,74 @@ footer p { color: #ffffff;
     padding-right: 10px;
 }
 
-titnam {
-color: #5C99B0;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 100px;
-    padding: -10px;
-    font-weight: 800;
-    text-decoration:none;
-    text-transform: uppercase;
-    line-height: 90px;
+main h1, main h2,main h3{
+    margin:0;
 }
-titnamc1 {
+
+main{
+    line-height: 1;
+}
+
+ .en-cours {
+    text-decoration: underline;
+    color: #fff;
+}
+/* essai pour sticky footer */
+.site-footer, .page-wrap:after {
+  height: 142px; 
+}
+.site-footer {
+  background: black;
+}
+.site-footers { 
+    position: fixed;
+    bottom: 0;
+}
+
+
+/* index */
+
+.nom {
 color: #5C99B0;
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 127px;
-    padding: -10px;
-    padding-top: 10px;
+    font-size: 150px;
     font-weight: 800;
     text-decoration:none;
     text-transform: uppercase;
-    line-height: 10px;  
+}
+.classe {
+color: #5C99B0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 127px;   
+    font-weight: 800;
+    text-decoration:none;
+    text-transform: uppercase;  
     
 }
 
-titnamc2 {
+.ville {
 color: #5C99B0;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 71.2px;
-    padding: -10px;
     padding-top: 10px;
     font-weight: 800;
     text-decoration:none;
     text-transform: uppercase;
-    line-height: 0px;  
     
 }
-titnamc3 {
-color: #5C99B0;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 30px;
-    padding: -10px;
-    padding-top: 10px;
-    font-weight: 800;
-    text-decoration:none;
-    text-transform: uppercase;
-    line-height: 0px;  
-}
 
-titnamc:hover {
-color: #5C99B0;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 80px;
-    padding: -10px;
-    opacity: 0.8;
-    font-weight: 800;
-    text-decoration:none;
-    text-transform: uppercase;
-      line-height: 90px;
-    transition: 1.3s;
-}
-
-titnam:a { 
+  main h1:hover, main h2:hover, main h3:hover {
     color: #5C99B0;
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 120px;
-    padding: -10px;
-    font-weight: 800;
-    text-decoration:none;
-    text-transform: uppercase;
-      line-height: 90px;
-    opacity: 1;
-}
-
-titnam:hover {
-color: #5C99B0;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 120px;
-    padding: -10px;
+    font-size: 160px;
     opacity: 0.8;
     font-weight: 800;
     text-decoration:none;
     text-transform: uppercase;
-      line-height: 90px;
     transition: 1.3s;
 }
 
- titnam span{
+ .titnam span{
     position:absolute; 
     margin-top:23px;
     margin-left:35px;
@@ -179,7 +164,7 @@ color: #5C99B0;
      font-size: 12px;
     background: #5C99B0;
      width: 400px;
-     padding: 15px;
+     padding: 10px;
     border-radius:3px; 
          font-weight: 500;
      overflow: auto;
@@ -192,45 +177,77 @@ color: #5C99B0;
      text-align: justify;
 
 }
-titnam:hover span, titnam:focus span{
+.titnam:hover span, .titnam:focus span{
      transform:scale(1) rotate(0);        
 }
 
 
-body {
- 
-    background-image:url(http://farm7.staticflickr.com/6097/6337890839_13de386ec1.jpg);
-    background-attachment:fixed;  
+.flotte {
+float:right;
+   padding: 5px;
+}
+
+/*page contact*/
+.titnamc1 {
+color: #5C99B0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 127px;
+    padding-top: 10px;
+    font-weight: 800;
+    text-decoration:none;
+    text-transform: uppercase;
+
+}
+
+.titnamc2 {
+color: #5C99B0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 71.2px;
+      padding-top: 10px;
+    font-weight: 800;
+    text-decoration:none;
+    text-transform: uppercase;
      
+}
+.titnamc3 {
+color: #5C99B0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 30px;
+     padding-top: 10px;
+    font-weight: 800;
+    text-decoration:none;
+    text-transform: uppercase;
+
 }
 
 
-school { font-family: 'Open Sans Condensed', sans-serif;
+/* page parcours */
+.school { font-family: 'Open Sans Condensed';
     padding: -10px;
-    font-weight: 800;
+    font-weight: 400;
     text-decoration:none;
     text-transform: uppercase;
     line-height: 20px;
      font-size: 22px;
     
 }
-school h1 { text-align: center;
+.school h1 { text-align: center;
     font-size: 40px;
 }
-exp {  font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 25px;
-    font-weight: 800;
+.exp {  font-family: 'Open Sans Condensed';
+    font-size: 22px;
+    font-weight: 400;
     text-decoration:none;
     text-transform: uppercase;
     line-height: 22px;    
    
 }
 
-exp h1 { text-align: center;
+.exp h1 { text-align: center;
     font-size: 40px;
 }
-o { color:#5C99B0;}
-o:hover {
+h6 { color:#5C99B0;}
+h6:hover {
 font-style: italic;}
 
 .main-center{
@@ -240,34 +257,31 @@ font-style: italic;}
 background-color: white;
     padding: 3px 10px 3px 10px;
     height: 100%;
-        margin-top: 100px;
      padding-bottom:-10px;
-    box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7); 
-    overflow: auto;
-    height: 300px;
-    scrollbar face color: #000000;  
      
 
 }
 
 
-loi {  font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 25px;
-    font-weight: 800;
+.loisirs {  font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
     text-decoration:none;
+    text-align: justify;
     text-transform: uppercase;
     line-height: 22px;    
    
 }
 
-loi h1 { text-align: center;
+.loisirs h1 { text-align: center;
     font-size: 40px;
 }
-d { color:#5C99B0;}
-d:hover {
-font-style: italic;}
 
 .center { max-width: 740px;
     margin: auto;
     margin-top: 100px;
 }
+
+
+
+
